@@ -1,0 +1,12 @@
+<div class="cart-container">
+    <h2>Lista de Compras</h2>
+    <ul>
+      <li *ngFor="let car of car" class="product-item">
+        <span>{{ car.nombre }}</span>
+        <span class="price">{{ car.precio | currency }}</span>
+        <button class="borrar" (click)="removeProduct(car)">Eliminar</button>
+      </li>
+    </ul>
+    <button class="pago"(click)="realizarCompra()">Pagar</button>
+  </div>
+  

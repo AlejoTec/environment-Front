@@ -1,0 +1,8 @@
+<ng-container *ngIf="loader$ | async">
+    <div class="absolute w-screen h-screen z-50 bg-secondary-700 flex items-center justify-center">
+        <div class="w-48 h-48 bg-primary shadow-2xl shadow-primary rounded-full flex items-center justify-center">
+            <img class="-ml-1" src="../assets/imgs/loader.gif" alt="...">
+        </div>
+    </div>
+</ng-container>
+<router-outlet></router-outlet>

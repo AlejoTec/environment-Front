@@ -1,0 +1,35 @@
+<div class="w-screen h-screen bg-secondary flex items-center justify-center">
+	<div class="flex justify-center shadow-md w-3/5 bg-card rounded-md shadow-secondary-900 border border-gray-700">
+		<div class="flex flex-col w-1/2">
+			<img src="../../../assets/imgs/Logo.png" class="w-60 mx-auto" alt="Logo" srcset="">
+
+			<div [formGroup]="formLogin" class="flex flex-col items-center justify-center gap-5 w-full p-6">
+				<mat-form-field class="w-full">
+					<mat-label>Usuario</mat-label>
+
+					<input matInput formControlName="email" required>
+					<mat-error *ngIf="formLogin.get('email')?.hasError('required')">
+						Debe Ingresar el usuario
+					</mat-error>
+					<mat-error *ngIf="formLogin.get('email')?.hasError('email')">
+						Debe Ingresar un correo valido
+					</mat-error>
+				</mat-form-field>
+
+				<mat-form-field class="w-full">
+					<mat-label>Contraseña</mat-label>
+
+					<input type="password" matInput formControlName="password" required>
+					<mat-error *ngIf="formLogin.get('password')?.hasError('required')">
+						Debe Ingresar la contraseña
+					</mat-error>
+				</mat-form-field>
+
+				<button matRipple (click)="login()" class="bg-primary py-3 rounded text-white px-10">Ingresar</button>
+			</div>
+		</div>
+		<div class="bg-image">
+
+		</div>
+	</div>
+</div>

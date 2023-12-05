@@ -1,0 +1,22 @@
+<div class="hola">
+    <div class="flex flex-wrap gap-y-6 w-full h-full">
+		<!-- Contenido del div aquí primera imagen  -->
+		<ng-container *ngFor="let card of cards">
+			<div class="px-3">
+				<div class="card">
+				<div class="face front">
+					<img src="../../../assets/imgs/{{card.image}}" alt="..."> 
+				</div>
+				<div class="face back">
+					<h4>{{card.title}}</h4>
+					<p>{{card.desccription}}
+					</p>
+					<div class="link">
+						<a href="#">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ng-container>
+</div>
+</div>

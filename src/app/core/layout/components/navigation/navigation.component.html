@@ -1,0 +1,21 @@
+<div class="flex px-1 flex-col items-center bg-primary-100 w-full h-full shadow-md border-r border-r-secondary-100">
+	<img [routerLink]="['/admin']" routerLinkActive="router-link-active" src="../../../../../assets/imgs/Logo.png"
+		class="w-36 cursor-pointer" alt="">
+
+	<nav class="mt-4 w-full flex flex-col gap-4">
+		<ng-container *ngFor="let item of menuItems">
+			<a [routerLink]="['/admin', item.path]" routerLinkActive="link-active" class="
+			transition-all
+			font-semibold p-3
+			text-secondary
+			cursor-pointer
+			rounded-md
+			border
+			border-primary-100
+			hover:bg-primary-300
+			hover:border-primary-500">
+				{{item.name}}
+			</a>
+		</ng-container>
+	</nav>
+</div>

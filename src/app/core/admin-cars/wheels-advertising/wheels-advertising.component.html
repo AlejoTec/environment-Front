@@ -1,0 +1,21 @@
+<!-- customer-service.component.html -->
+<div class="container">
+	<h1>Formulario de Atención al Cliente</h1>
+	<form (ngSubmit)="submitCustomerServiceForm()">
+	  <!-- Campos relacionados con la atención al cliente -->
+	  <div class="form-group">
+		<label for="name">Nombre:</label>
+		<input type="text" id="name" name="name" required>
+	  </div>
+	  <div class="form-group">
+		<label for="name">Correo Electrónico:</label>
+		<input type="text" id="name" name="name" required>
+	  </div>
+	  <div class="form-group">
+		<label for="comments">Comentarios:</label>
+		<textarea id="comments" name="comments" rows="4" required></textarea>
+	  </div>
+	  <button type="submit" class="btn btn-primary" (click)="showAlert()">Enviar</button>
+	</form>
+  </div>
+  

@@ -1,0 +1,17 @@
+<header class="header">
+    <h1>Productos</h1>
+</header>
+<div class="flex flex-wrap gap-y-6 w-full h-full" id="contenedor">
+  <!-- Contenido del div aquí primera imagen  -->
+  <ng-container *ngFor="let car of car">
+  <div class="card" id="{{car.id}}">
+    <img src="../../../assets/imgs/{{car.imagen}}" alt="Producto 2">
+    <div class="card-content">
+        <h3>{{car.nombre}}</h3>
+        <p class="price">{{car.precio | currency}}</p>
+        <button class="add-to-cart" (click)="onClick(car)">Comprar</button>
+    </div>
+</div>
+</ng-container>
+</div>
+

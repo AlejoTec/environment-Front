@@ -1,0 +1,52 @@
+<div class="padre">
+<div class="container">
+    <h1>Información para Mantenimiento</h1>
+    <form (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="celular">Número Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+        </div>
+        <div class="form-group">
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+        </div>
+        <div class="form-group">
+            <label for="placa-carro">Placa del Carro:</label>
+            <input type="text" id="placa-carro" name="placa-carro" required>
+        </div>
+        <div class="form-group">
+            <label for="modelo">Modelo de auto:</label>
+            <input type="text" id="modelo" name="modelo" required>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="showAlert()">Enviar</button>
+    </form>
+</div>
+<!-- payment-info.component.html -->
+<div class="container">
+    <h1>Información de Tarjeta</h1>
+    <form (ngSubmit)="submitPaymentInfoForm()">
+      <!-- Campos relacionados con la información de pago -->
+      <div class="form-group">
+        <label for="cardNumber">Número de Tarjeta:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+      </div>
+      <!-- Otros campos del formulario de información de pago -->
+      <div class="form-group">
+        <label for="expiryDate">Fecha de Vencimiento:</label>
+        <input type="text" id="expiryDate" name="expiryDate" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Realizar Pago</button>
+    </form>
+  </div>
+  
+</div>
+
+

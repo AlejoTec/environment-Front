@@ -1,0 +1,238 @@
+// *{
+
+
+
+
+// .card{
+// 	position: absolute;
+// 	text-align: center;
+// }
+
+
+
+
+// .card .face {
+//   position: absolute;
+//   width: 100px ;
+//   height: 100px;
+//   backface-visibility: hidden ;
+//   border-radius: 10px;
+//   overflow:  hidden;
+//   transition:  .5s;
+// }
+
+// .card .front{
+// 	transform: perspective(600px) rotateY(0deg);
+// 	box-shadow: 0 5px 10px rgba(101, 25, 25, 0);
+// }
+
+// .card .front img {
+// 	position: absolute;
+// 	width: 100% ;
+// 	height: 100%;
+// 	object-fit: cover;
+
+// }
+
+// .card .front h3{
+// 	position: absolute;
+// 	bottom: 0;
+// 	width: 100%;
+// 	height: 45px;
+// 	line-height: 45px;
+// 	color: blue($color: #000000);
+// 	text-align: center;
+// }
+
+
+// .card .back {
+// 	transform: perspective(600px) rotateY(180deg);
+// 	background: #000000;
+// 	padding: 15px;
+// 	color: aqua;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// 	text-align: center;
+// 	box-shadow: 0 5px 10px red;
+// }
+
+
+// .card .back .link {
+//   border-top: solid  1px greenyellow ;
+//   height: 50px;
+//   line-height: 50px;
+// }
+
+// .card .back a {
+// 	color: #dfeb31c9;
+// }
+
+// .card .back h3{
+// 	font-size: 30px;
+// 	margin-top: 20px;
+// 	letter-spacing: 2px;
+// }
+
+
+// .card .back p {
+// 	letter-spacing: 1px;
+// }
+
+// .card:hover .front {
+// 	transform: perspective(600px) rotateY(180deg);
+// }
+
+
+// .card:hover .back {
+// 	transform: perspective(600px) rotateY(360deg);
+// }
+
+
+
+// /* Establecer la imagen de fondo para el div */
+// .hola {
+//     background-image: url('../../../assets/imgs/car-5718685_1280.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+//     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+//     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+//     @apply w-full h-full
+// }
+
+
+
+
+
+
+
+
+*{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-shadow: border-box;
+ 	font-family: sans-serif;
+ }
+	
+
+ body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height:  100vh;
+	@apply bg-black;
+}
+
+
+  .card {
+ 	position: relative;
+ 	width: 280px;
+ 	height: 280px;
+ 	margin-left: 25px;
+ }
+
+
+.face .front {
+	position: absolute;
+	z-index: 10;
+    backface-visibility: hidden ;
+    border-radius: 20px;
+    overflow:  hidden;
+    transition:  .5s;
+}
+
+
+.face .back {
+	position: absolute;
+	z-index: 20;
+}
+
+.card .face {
+  position: absolute;
+  width:  300px ;
+  height: 300px;
+  backface-visibility: hidden ;
+  border-radius: 10px;
+  overflow:  hidden;
+  transition:  .5s;
+}
+
+
+.card .front{
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px rgba(101, 25, 25, 0);
+}
+
+
+.card .front img {
+	position: absolute;
+	width: 100% ;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.card .front h3{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: blue($color: #000000);
+	text-align: center;
+}
+
+
+.card .back {
+	transform: perspective(600px) rotateY(180deg);
+	background: #000000;
+	padding: 15px;
+	color: aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px red;
+}
+
+
+.card .back .link {
+  border-top: solid  1px greenyellow ;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back a {
+	color: #dfeb31c9;
+}
+
+.card .back h3{
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+
+.card .back p {
+	letter-spacing: 1px;
+}
+
+.card:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+
+.card:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+/* Establecer la imagen de fondo para el div */
+.hola {
+    background-image: url('../../../assets/imgs/pruebaimglogin.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    @apply w-full h-full
+}
+
+
+  
